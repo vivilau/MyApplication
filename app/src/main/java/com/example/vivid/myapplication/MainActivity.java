@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity
                 @Override
                 public void onClick(View v) {
 //                    点击按钮事件
-                    Intent intent = new Intent(MainActivity.this, GetOrde.class);
+                    Intent intent = new Intent(MainActivity.this, PullRefresh.class);
                     startActivity(intent);
                 }
             });
