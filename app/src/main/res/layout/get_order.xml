@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300px">
+
+        <ImageView
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:id="@+id/imageView2"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="80px"
+            android:src="@drawable/ic_mood"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_toEndOf="@+id/imageView2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:text="服务"
+                android:textSize="16sp"
+                android:id="@+id/textView2"
+                android:gravity="center_vertical|right" />
+
+            <Switch
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:textOff="接站"
+                android:textOn="送站"
+                android:showText="true"
+                android:id="@+id/switch1"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

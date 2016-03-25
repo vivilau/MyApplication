@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal" android:layout_width="fill_parent"
+            android:layout_height="24dp">
+            <TextView
+                android:layout_width="230px"
+                android:layout_height="fill_parent"
+                android:textSize="12sp"
+                android:text="订单时间:"
+                android:gravity="center_vertical" />
+            <TextView
+                android:id="@+id/order_id"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textSize="13sp"
+                android:gravity="center_vertical" />
+            <!--android:text="我去"-->
+        </LinearLayout>
+        <LinearLayout  android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="24dp">
+            <TextView
+                android:layout_width="230px"
+                android:layout_height="fill_parent"
+                android:textSize="12sp"
+                android:text="乘车人:"
+                android:gravity="center_vertical" />
+            <TextView
+                android:id="@+id/person"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black" />
+                <!--android:text="我去"-->
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal" android:layout_width="fill_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="230px"
+                android:layout_height="24dp"
+                android:textSize="12sp"
+                android:text="车次信息:"
+                android:textIsSelectable="false"
+                android:gravity="center_vertical" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/train_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="24dp"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="26dp"
+                    android:textSize="13sp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/train_time" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal" android:layout_width="fill_parent"
+            android:layout_height="24dp">
+            <TextView
+                android:layout_width="230px"
+                android:layout_height="fill_parent"
+                android:textSize="12sp"
+                android:text="订单时间:"
+                android:gravity="center_vertical" />
+            <TextView
+                android:id="@+id/order_time"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textSize="13sp"
+                android:gravity="center_vertical" />
+            <!--android:text="我去"-->
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:text="预约"
+        android:id="@+id/get"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"
+        android:layout_gravity="right" />
+</LinearLayout>
